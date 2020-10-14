@@ -7,6 +7,7 @@ const order = require('gulp-order');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const cssnano = require('cssnano');
+const babel = require('gulp-babel');
 
 gulp.task('sass', function () {
   const processors = [
@@ -28,13 +29,16 @@ gulp.task('js', function () {
       'vendor/**/*.js',
       '9_custom-scripts.js'
     ]))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(concat('custom-scripts.min.js'))
     .pipe(uglify({
       output: {
         comments: '/^!/'
       }
     }))
-    .pipe(sourcemaps.write('../../dev/maps', {includeContent: false, sourceRoot: 'wp-theme-files'}))
+    .pipe(sourcemaps.write('../../dev/maps', {includeContent: true, sourceRoot: 'wp-theme-files'}))
     .pipe(gulp.dest('wp-theme-files/js'))
 });
 
