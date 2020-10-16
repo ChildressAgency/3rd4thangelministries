@@ -1,0 +1,17 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.top-donate {
+  background-color: $teal;
+  font-size: 1.3em;
+  font-weight: lighter;
+
+  a, a:hover, a:visited {
+    color: white;
+  }
+
+  b {
+    text-transform: uppercase;
+  }
+}

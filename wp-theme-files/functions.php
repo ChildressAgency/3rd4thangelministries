@@ -113,3 +113,11 @@ function cai_setup(){
 }
 
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
+
+add_action('acf/init', 'cai_add_custom_fields');
+function cai_add_custom_fields()
+{
+    acf_add_options_page("Theme Settings");
+
+    require_once dirname(__FILE__) . '/includes/custom-fields.php';
+}
