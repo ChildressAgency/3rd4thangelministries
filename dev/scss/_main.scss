@@ -15,3 +15,21 @@ body {
     text-transform: uppercase;
   }
 }
+
+.carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  padding: 0;
+  border: none;
+}
+
+.hero-slider {
+  overflow: hidden;
+}
+
+.carousel {
+  .carousel-item {
+    max-height: 40vh;
+  }
+}
