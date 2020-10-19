@@ -7,7 +7,8 @@ if ($images):
         <div class="row">
             <div class="col">
 
-                <div id="heroSlider" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <div id="heroSlider" class="carousel slide" data-ride="carousel"
+                     data-interval="<?php echo get_field("slider_speed", "options") ?>">
                     <ol class="carousel-indicators">
                         <?php foreach ($images as $index => $image) : ?>
                             <li data-target="#heroSlider" data-slide-to="<?php echo $index ?>"
