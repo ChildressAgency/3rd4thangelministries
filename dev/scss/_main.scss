@@ -2,8 +2,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.main-wrapper {
+  position: relative;
+}
+
 .top-donate {
   background-color: $teal;
+  height: 40px;
   font-size: 1.3em;
   font-weight: lighter;
 
@@ -13,6 +18,7 @@ body {
 
   b {
     text-transform: uppercase;
+    font-weight: bolder;
   }
 }
 
@@ -31,5 +37,31 @@ body {
 .carousel {
   .carousel-item {
     max-height: 40vh;
+  }
+}
+
+#navbar-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #112F4D60;
+  color: white !important;
+
+  li.menu-item {
+    padding: 10px 16px;
+
+    a {
+      color: white;
+    }
+  }
+
+  li.menu-item:hover {
+    background-color: $orange;
+  }
+
+  li.current-menu-item {
+    background-color: $orange;
+    font-weight: bold;
   }
 }

@@ -103,10 +103,7 @@ function cai_setup(){
   //set_post_thumbnail_size(320, 320);
 
   register_nav_menus(array(
-    'header-nav' => 'Header Navigation',
-    'footer-nav' => 'Footer Navigation',
-    'company-menu' => 'Company Footer Menu',
-    'services-menu' => 'Services Footer Menu'
+    'header-nav' => 'Header Navigation'
   ));
 
   load_theme_textdomain('cai', get_stylesheet_directory_uri() . '/languages');
