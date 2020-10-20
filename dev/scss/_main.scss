@@ -22,12 +22,18 @@ body {
   }
 }
 
-.carousel-indicators li {
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  padding: 0;
-  border: none;
+.carousel-indicators {
+  li {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 0;
+    border: none;
+  }
+
+  li.active {
+    background-color: $teal;
+  }
 }
 
 .hero-slider {
@@ -64,4 +70,61 @@ body {
     background-color: $orange;
     font-weight: bold;
   }
+}
+
+.post-title {
+  border-bottom: 1px solid #70707080;
+  margin-bottom: 40px;
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding: 0 30px;
+    background-color: white;
+    color: $teal;
+    display: inline-block;
+    position: relative;
+    top: 32px;
+  }
+}
+
+.post {
+  .featured-image {
+    max-width: 50%;
+  }
+}
+
+.wpcf7-form-control-wrap {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.red-button, .wpcf7-submit {
+  background-color: $red;
+  padding: 4px 20px;
+  color: white !important;
+  border: none;
+  text-transform: uppercase;
+}
+
+.wpcf7-submit {
+  float: right;
+}
+
+.wpcf7-text, .wpcf7-email {
+  width: 90%;
+  margin: auto;
+}
+
+.wpcf7-textarea {
+  width: 100%;
+}
+
+.wpcf7-text, .wpcf7-email, .wpcf7-textarea,
+.wpcf7-text:active, .wpcf7-email:active, .wpcf7-textarea:active,
+{
+  border: none;
+  background-color: $gray;
+  outline: none;
 }
