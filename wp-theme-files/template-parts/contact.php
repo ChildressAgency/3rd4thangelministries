@@ -2,7 +2,7 @@
 if ($formId): ?>
     <div class="container-fluid container-md">
         <div class="row justify-content-center">
-            <div class="col-8 text-center">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
                 <div class="post-title">
                     <h1>Contact Us</h1>
                 </div>

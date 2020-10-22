@@ -4,6 +4,8 @@
 
 <?php get_template_part("template-parts/content"); ?>
 
+<?php get_template_part("template-parts/stripes"); ?>
+
 <?php get_template_part("template-parts/contact"); ?>
 
 <?php get_footer();

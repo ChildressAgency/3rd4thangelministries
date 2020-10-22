@@ -143,3 +143,11 @@ body {
   background-color: $gray;
   outline: none;
 }
+
+.stripe.multicol {
+  h4 {
+    color: $teal;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+}
