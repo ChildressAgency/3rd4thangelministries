@@ -19,6 +19,17 @@ if ($images):
                         <?php foreach ($images as $index => $image) : ?>
                             <div class="carousel-item <?php echo $index == 0 ? "active" : "" ?>">
                                 <img class="d-block w-100" src="<?php echo esc_url($image) ?>" alt="">
+                                <div class="carousel-caption justify-content-center row">
+                                    <div class="col-10 col-lg-8 text-right">
+                                        <h1>The 3rd &amp; 4th</h1>
+                                        <h1>Angels</h1>
+                                        <h1>Ministries</h1>
+                                        <p>
+                                            <a href="<?php echo get_field("youtube_link", "options") ?>"
+                                               class="red-button">Watch Messages</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         <?php endforeach; ?>
                     </div>
