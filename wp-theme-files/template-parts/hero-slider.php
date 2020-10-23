@@ -39,4 +39,6 @@ if ($images):
         </div>
     </div>
 
+<?php else: ?>
+    <div class="my-5"></div>
 <?php endif;
