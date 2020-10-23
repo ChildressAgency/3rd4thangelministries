@@ -2,6 +2,14 @@
 <project version="4">
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="cai - 34am">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/wp-content/themes/3rd4thangels" local="$PROJECT_DIR$/wp-theme-files" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="childress dev - craigpokesu">
         <serverdata>
           <mappings>
