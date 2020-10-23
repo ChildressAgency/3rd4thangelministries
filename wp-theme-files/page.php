@@ -6,6 +6,8 @@
 
 <?php get_template_part("template-parts/stripes"); ?>
 
+<?php get_template_part("template-parts/donate"); ?>
+
 <?php get_template_part("template-parts/contact"); ?>
 
 <?php get_footer();

@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
 
 <div class="container-fluid text-center p-1 top-donate">
-    <a href="<?php echo get_field("facebook", "options") ?>">Donate Today. <b>Click Here</b></a>
+    <a href="<?php echo get_field("donation_link", "options") ?>">Donate Today. <b>Click Here</b></a>
 </div>
 
 <div id="navbar-container">
