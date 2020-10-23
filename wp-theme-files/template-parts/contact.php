@@ -1,5 +1,5 @@
 <?php $formId = get_field("contact_form", "options");
-if ($formId && get_field("show_contact_form")): ?>
+if ($formId): ?>
     <div class="container-fluid container-md">
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-8 text-center">
