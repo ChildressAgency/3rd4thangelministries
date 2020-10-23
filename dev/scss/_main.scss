@@ -240,3 +240,20 @@ body {
     }
   }
 }
+
+.quicklinks {
+  a {
+    color: $teal;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: font-size 400ms;
+  }
+
+  a:hover {
+    color: $orange;
+  }
+
+  .stripe-item {
+    min-height: 100px;
+  }
+}
