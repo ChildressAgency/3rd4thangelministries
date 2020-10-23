@@ -114,12 +114,13 @@ body {
   width: 100%;
 }
 
-.red-button, .red-button:hover, .wpcf7-submit {
+.red-button, .red-button:hover, .wpcf7-submit, .speaking-title {
   background-color: $red;
   padding: 4px 20px;
   color: white !important;
   border: none;
   text-transform: uppercase;
+  text-decoration: none !important;
 }
 
 .wpcf7-submit {
@@ -149,5 +150,48 @@ body {
     color: $teal;
     font-size: 1em;
     font-weight: bolder;
+  }
+}
+
+.stripe.speaking {
+  background-color: #112f4d;
+  color: white;
+
+  .image {
+    background-position: center;
+    background-size: cover;
+    min-height: 20vh;
+  }
+
+  .speaking-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 1.8em;
+    position: relative;
+  }
+
+  .speaking-body {
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .image {
+      min-height: 40vh;
+    }
+
+    .speaking-title {
+      left: -30px;
+    }
+  }
+
+  .text {
+    @media (min-width: 1600px) {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
   }
 }
