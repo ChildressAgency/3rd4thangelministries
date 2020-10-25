@@ -18,7 +18,11 @@
 <div id="navbar-container">
     <div class="container align-content-center">
         <nav class="col navbar navbar-expand-md navbar-dark p-0 justify-content-center">
-            <a class="navbar-brand" href="#">Logo</a>
+            <?php if (get_field("site_logo", "options")): ?>
+                <a class="navbar-brand" href="#">
+                    <img src="<?php echo get_field("site_logo", "options") ?>" alt="Logo"/>
+                </a>
+            <?php endif; ?>
 
             <?php wp_nav_menu(array(
                 'theme_location' => 'header-nav',
