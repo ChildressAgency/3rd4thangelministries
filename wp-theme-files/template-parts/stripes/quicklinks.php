@@ -8,7 +8,7 @@
     </div>
     <div class="row justify-content-center">
         <?php foreach ($args["links"] as $link): ?>
-            <div class="col-12 col-md-6 col-lg-4 text-center p-3 p-lg-5 stripe-item">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center p-3 p-lg-5 stripe-item">
                 <a href="<?php echo $link["link"]["url"] ?>">
                     <?php echo $link["link"]["title"] ?>
                 </a>
