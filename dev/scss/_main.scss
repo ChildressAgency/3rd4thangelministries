@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
+  padding-bottom: 30px;
 }
 
 .main-wrapper {
@@ -41,6 +42,10 @@ body {
   overflow: hidden;
 
   .carousel-caption {
+    @media (max-width: 992px) {
+      left: 0;
+      right: 8px;
+    }
 
     h1 {
       font-family: 'Cinzel', serif;
@@ -57,7 +62,11 @@ body {
 
 .carousel {
   .carousel-item {
-    max-height: 40vh;
+    .image {
+      height: 430px;
+      background-position: center;
+      background-size: cover;
+    }
   }
 }
 
@@ -65,9 +74,12 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 10;
-  background-color: #112F4D60;
+  z-index: 100;
   color: white !important;
+  background-color: #112F4D60;
+  @media (max-width: 992px) {
+    background-color: rgba(17, 47, 77, 0.80);
+  }
 
   li.menu-item {
     padding: 10px 16px;
@@ -93,6 +105,10 @@ body {
       height: 60px;
       width: auto;
     }
+  }
+
+  .navbar-toggler {
+    outline: none;
   }
 }
 

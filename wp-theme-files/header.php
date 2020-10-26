@@ -17,12 +17,19 @@
 
 <div id="navbar-container">
     <div class="container align-content-center">
-        <nav class="col navbar navbar-expand-md navbar-dark p-0 justify-content-center">
+        <nav class="col navbar navbar-expand-lg navbar-dark p-0 justify-content-between justify-content-lg-center">
+
+            <button class="navbar-toggler d-block d-lg-none" data-toggle="collapse" data-target="#header-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <?php if (get_field("site_logo", "options")): ?>
                 <a class="navbar-brand" href="#">
                     <img src="<?php echo get_field("site_logo", "options") ?>" alt="Logo"/>
                 </a>
             <?php endif; ?>
+
+            <div class="d-block d-lg-none"></div>
 
             <?php wp_nav_menu(array(
                 'theme_location' => 'header-nav',
@@ -30,7 +37,7 @@
                 'container' => 'div',
                 'container_class' => 'collapse navbar-collapse flex-grow-0',
                 'container_id' => 'header-navbar',
-                'menu_class' => 'nav navbar-nav flex-column flex-md-row align-items-between',
+                'menu_class' => 'nav navbar-nav flex-column flex-lg-row align-items-between',
                 'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
                 'walker' => new WP_Bootstrap_Navwalker(),
             )); ?>

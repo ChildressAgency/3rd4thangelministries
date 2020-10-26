@@ -7,7 +7,7 @@ if ($images):
         <div class="row">
             <div class="col">
 
-                <div id="heroSlider" class="carousel slide" data-ride="carousel"
+                <div id="heroSlider" class="carousel slide"
                      data-interval="<?php echo get_field("slider_speed", "options") ?>">
                     <ol class="carousel-indicators">
                         <?php foreach ($images as $index => $image) : ?>
@@ -18,9 +18,9 @@ if ($images):
                     <div class="carousel-inner">
                         <?php foreach ($images as $index => $image) : ?>
                             <div class="carousel-item <?php echo $index == 0 ? "active" : "" ?>">
-                                <img class="d-block w-100" src="<?php echo esc_url($image) ?>" alt="">
+                                <div class="image" style="background-image: url('<?php echo esc_url($image) ?>')"></div>
                                 <div class="carousel-caption justify-content-center row">
-                                    <div class="col-10 col-lg-8 text-right">
+                                    <div class="col-12 col-md-10 col-lg-8 text-right">
                                         <h1>The 3rd &amp; 4th</h1>
                                         <h1>Angels</h1>
                                         <h1>Ministries</h1>
