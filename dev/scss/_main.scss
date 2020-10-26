@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  padding-bottom: 30px;
+  color: $text;
 }
 
 .main-wrapper {
@@ -283,5 +283,13 @@ body {
 
   .stripe-item {
     min-height: 100px;
+  }
+}
+
+footer {
+  border-top: 1px solid #70707080;
+
+  a, a:hover {
+    color: $text;
   }
 }
