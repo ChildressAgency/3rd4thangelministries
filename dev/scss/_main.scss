@@ -131,7 +131,9 @@ body {
 
 .post {
   .featured-image {
-    max-width: 50%;
+    @media (min-width: 992px) {
+      max-width: 50%;
+    }
   }
 }
 
