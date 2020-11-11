@@ -121,7 +121,7 @@ function cai_create_post_types()
         "public" => true,
         "menu_icon" => "dashicons-book",
         "labels" => array(
-            "name" => "Books",
+            "name" => "Book",
             "singular" => "Book",
             'search_items' => 'Search Books',
             'all_items' => 'All Books',
@@ -136,7 +136,7 @@ function cai_create_post_types()
         "public" => true,
         "menu_icon" => "dashicons-format-video",
         "labels" => array(
-            "name" => "DVDs",
+            "name" => "DVD",
             "singular" => "DVD",
             'search_items' => 'Search DVDs',
             'all_items' => 'All DVDs',
@@ -146,6 +146,21 @@ function cai_create_post_types()
             'menu_name' => 'DVDs',
         ),
         'supports' => array('title', 'editor', 'thumbnail')
+    ));
+    register_post_type("video", array(
+        "public" => true,
+        "menu_icon" => "dashicons-youtube",
+        "labels" => array(
+            "name" => "Video",
+            "singular" => "Video",
+            'search_items' => 'Search Videos',
+            'all_items' => 'All Videos',
+            'edit_item' => 'Edit Video',
+            'update_item' => 'Update Video',
+            'add_new_item' => 'Add New Video',
+            'menu_name' => 'Videos',
+        ),
+        'supports' => array('title')
     ));
     flush_rewrite_rules();
 }
