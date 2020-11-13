@@ -24,7 +24,7 @@ if (have_posts()): ?>
                 get_template_part("template-parts/video");
             } ?>
         </div>
-        <div class="row justify-content-center pb-5">
+        <div class="row justify-content-center pb-5 pt-3">
             <div class="col-12 col-md-4 text-center">
                 <a class="red-button" href="#">Go to my channel</a>
             </div>
