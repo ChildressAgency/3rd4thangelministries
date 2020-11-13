@@ -8,7 +8,7 @@ if ($formId): ?>
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <?php echo do_shortcode('[contact-form-7 id="' . $formId . '"]'); ?>
+                <?php echo FrmFormsController::get_form_shortcode(array('id' => $formId, 'title' => false, 'description' => false)); ?>
             </div>
         </div>
     </div>
