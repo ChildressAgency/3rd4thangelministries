@@ -143,7 +143,7 @@ body {
   width: 100%;
 }
 
-.red-button, .red-button:hover, .wpcf7-submit, .speaking-title {
+.red-button, .red-button:hover, .speaking-title, .frm_submit button {
   background-color: $red;
   padding: 4px 20px;
   color: white !important;
@@ -152,26 +152,21 @@ body {
   text-decoration: none !important;
 }
 
-.wpcf7-submit {
+.frm_submit button {
   float: right;
 }
 
-.wpcf7-text, .wpcf7-email {
-  width: 90%;
-  margin: auto;
-  padding: 0 5px;
-}
-
-.wpcf7-textarea {
-  width: 100%;
-}
-
-.wpcf7-text, .wpcf7-email, .wpcf7-textarea,
-.wpcf7-text:active, .wpcf7-email:active, .wpcf7-textarea:active,
-{
+.frm_forms input,
+.frm_forms textarea {
   border: none;
+  padding: 6px;
   background-color: $gray;
   outline: none;
+  margin: 8px auto;
+}
+
+.frm_80 {
+  padding: 0 10%;
 }
 
 .stripe.multicol {
